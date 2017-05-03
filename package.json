@@ -1,0 +1,24 @@
+{
+  "name": "p11_site_performance",
+  "version": "1.0.0",
+  "description": "Performance optimization using npm, node and gulp.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zcardais/p11_site_performance.git"
+  },
+  "author": "Zach Cardais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zcardais/p11_site_performance/issues"
+  },
+  "homepage": "https://github.com/zcardais/p11_site_performance#readme"
+}

@@ -1,23 +1,35 @@
 footer {
-    padding: 1.5rem 3rem;
+  padding: 1.5rem 3rem;
 }
+
 footer .row {
-    max-width: 100%;
+  max-width: 100%;
 }
+
 footer .columns {
-    padding-left: 0;
+  padding-left: 0;
 }
+
 footer .social {
-    text-align: right;
+  text-align: right;
 }
+
 footer .social img {
-    height: 35px;
-    width: 35px;
+  height: 35px;
+  width: 35px;
 }
+
+footer .social .social-icon {
+  height: 35px;
+  width: 35px;
+  background: #A5ACBA;
+  border-radius: 20px;
+}
+
 footer p {
-    color: rgb(125, 136, 146);
-    font-family: "Ubuntu";
-    font-size: 0.95rem;
-    font-weight: 300;
-    padding-top: 0.5rem;
+  color: rgb(125, 136, 146);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  padding-top: 0.5rem;
 }
