@@ -2,6 +2,9 @@
 
 var gulp = require('gulp');
 var concat = require('gulp-concat');
+var gulpif = require('gulp-if');
+var sprity = require('sprity');
+
 
 gulp.task("concatStyles", function() {
   gulp.src([
@@ -27,12 +30,21 @@ gulp.task("concatScripts", function() {
   .pipe(gulp.dest("js"));
 });
 
-
-
-gulp.task("hello", function() {
-  console.log("Hello!");
+// generate sprite.png and _sprite.scss
+gulp.task('sprites', function () {
+  return sprity.src({
+    src: './img/avatars/**/*.{png,jpg}',
+    style: './sprite.css'
+  })
+    .pipe(gulpif('*.jpg', gulp.dest('./img/avatars/'), gulp.dest('./img/avatars/')))
 });
 
-gulp.task("default", ["hello"], function() {
-  console.log("This is the default task.");
-})
+
+
+// gulp.task("hello", function() {
+//   console.log("Hello!");
+// });
+//
+// gulp.task("default", ["hello"], function() {
+//   console.log("This is the default task.");
+// })
