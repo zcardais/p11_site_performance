@@ -13,13 +13,15 @@ var rename = require('gulp-rename');
 gulp.task('sprites', function () {
   return sprity.src({
     src: './img/avatars/**/*.{png,jpg}',
-    style: './sprite.css'
+    style: './sprite.css',
+    cssPath: '../img/avatars/'
   })
-    .pipe(gulpif('*.jpg', gulp.dest('./img/avatars/'), gulp.dest('./img/avatars/')))
+    .pipe(gulpif('*.jpg', gulp.dest('./img/'), gulp.dest('./css/')))
 });
 
 gulp.task("concatStyles", function() {
   gulp.src([
+    'https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css',
     'css/foundation.css',
     'css/basics.css',
     'css/menu.css',
@@ -27,7 +29,7 @@ gulp.task("concatStyles", function() {
     'css/photo-grid.css',
     'css/modals.css',
     'css/footer.css',
-    '../img/avatars/sprite.css'])
+    'css/sprite.css'])
     .pipe(concat("styles.css"))
     .pipe(gulp.dest("css"));
 });
@@ -35,7 +37,7 @@ gulp.task("concatStyles", function() {
 gulp.task("concatScripts", function() {
   gulp.src([
   'js/jquery.js',
-  'jx/fastclick.js',
+  'js/fastclick.js',
   'js/foundation.js',
   'js/foundation.equalizer.js',
   'js/foundation.reveal.js'])

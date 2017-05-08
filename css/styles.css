@@ -6829,3 +6829,49 @@ footer p {
   font-weight: 300;
   padding-top: 0.5rem;
 }
+
+.icon {
+  background-image: url('./sprite.png');
+}
+
+.icon-avatar1 {
+  background-position: -4px -4px;
+  width: 58px;
+  height: 58px;
+}
+
+.icon-avatar2 {
+  background-position: -4px -62px;
+  width: 58px;
+  height: 58px;
+}
+
+.icon-avatar3 {
+  background-position: -4px -120px;
+  width: 58px;
+  height: 58px;
+}
+
+.icon-avatar4 {
+  background-position: -4px -178px;
+  width: 58px;
+  height: 58px;
+}
+
+.icon-avatar5 {
+  background-position: -4px -236px;
+  width: 58px;
+  height: 58px;
+}
+
+.icon-avatar6 {
+  background-position: -4px -294px;
+  width: 58px;
+  height: 58px;
+}
+
+.icon-avatar7 {
+  background-position: -4px -352px;
+  width: 58px;
+  height: 58px;
+}
